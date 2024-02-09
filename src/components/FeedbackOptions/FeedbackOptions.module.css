@@ -1,0 +1,8 @@
+.wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 5px 15px;
+}
