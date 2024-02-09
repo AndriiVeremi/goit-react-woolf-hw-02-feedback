@@ -7,9 +7,9 @@ import css from './App.module.css';
 
 export class App extends Component {
   state = {
-    good: 1,
+    good: 0,
     neutral: 0,
-    bad: 1,
+    bad: 0,
   };
 
   handleClick = e => {
