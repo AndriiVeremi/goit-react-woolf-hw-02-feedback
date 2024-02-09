@@ -1,22 +1,21 @@
-import css from './FeedbackOptions.module.css';
+import {List, Item, Button  } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <ul className={css.list}>
+    <List>
       {options.map(option => {
         return (
-          <li className={css.item} key={option}>
-            <button
-              type="button"
-              className={css.btn}
+          <Item  key={option}>
+            <Button
+              type="button"            
               value={option}
               onClick={() => onLeaveFeedback(option)}
             >
               {option}
-            </button>
-          </li>
+            </Button>
+          </Item>
         );
       })}
-    </ul>
+    </List>
   );
 };
