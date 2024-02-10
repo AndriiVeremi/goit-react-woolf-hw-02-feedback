@@ -11,3 +11,7 @@ export const ListStatistic = styled.ul`
 export const ItemStatistic = styled.li`
   font-size: 20px;
 `;
+
+export const ItemIcon = styled.span`
+  margin-right: 10px;
+`;
