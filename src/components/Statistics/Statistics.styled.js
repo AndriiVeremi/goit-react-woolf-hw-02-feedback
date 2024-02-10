@@ -9,5 +9,5 @@ export const ListStatistic = styled.ul`
 `;
 
 export const ItemStatistic = styled.li`
-font-size: 20px;
+  font-size: 20px;
 `;

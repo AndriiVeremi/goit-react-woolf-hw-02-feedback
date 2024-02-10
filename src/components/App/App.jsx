@@ -1,9 +1,9 @@
 import { Component } from 'react';
-import { Section } from './Section/Section';
-import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
-import { Statistics } from './Statistics/Statistics';
-import { Notification } from './Notification/Notification';
-import {Container} from './App.styled';
+import { Section } from '../Section/Section';
+import { FeedbackOptions } from '../FeedbackOptions/FeedbackOptions';
+import { Statistics } from '../Statistics/Statistics';
+import { Notification } from '../Notification/Notification';
+import { Container } from './App.styled';
 
 export class App extends Component {
   state = {
@@ -13,10 +13,8 @@ export class App extends Component {
   };
 
   handleClick = e => {
-    console.log('e', e);
-
     this.setState({
-      [e]: this.state[e]+ 1,
+      [e]: this.state[e] + 1,
     });
   };
 
